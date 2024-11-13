@@ -12,7 +12,7 @@ for i in grades:
 # create
 grades_d: dict[str, int] =  {'moshe': 89, 'danny': 94, 'zeev': 55, 'maya': 75}
 
-personal: dict[str, object] = {'f_name': "danny", 'l_name': "cohen",
+personal: dict[str, any] = {'f_name': "danny", 'l_name': "cohen",
                                "age": 25, "smoker": True, 'siblings': [20, 24, 30],
                                'address': {
                                    'city': 'tel aviv',
@@ -27,9 +27,9 @@ personal: dict[str, object] = {'f_name': "danny", 'l_name': "cohen",
 # 5 get first age of siblings
 # 6 get zip code
 # 7 update the address.number with same value + 1
-# 8 del adress.zipcode
+# 8 del address.zipcode
 # print the new dict
-
+# print(personal['address']['zipcode'])
 
 # get by key
 print(grades_d['maya'])
@@ -52,3 +52,7 @@ print(grades_d)
 # delete
 del grades_d['ranny']
 print(grades_d)
+
+dict_nums: dict[int, int] = dict()  # prefer this over {}
+dict_nums[1] = 20
+print(dict_nums)
