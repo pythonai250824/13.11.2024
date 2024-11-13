@@ -20,6 +20,16 @@ personal: dict[str, object] = {'f_name': "danny", 'l_name': "cohen",
                                    'number': 90,
                                    'zipcode': 90210
                                }}
+# 1 fill the data
+# 2 get the age value using  [ ], and using get function
+# 3 change the smoker to False
+# 4 del key-value l_name
+# 5 get first age of siblings
+# 6 get zip code
+# 7 update the address.number with same value + 1
+# 8 del adress.zipcode
+# print the new dict
+
 
 # get by key
 print(grades_d['maya'])
